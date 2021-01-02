@@ -15,4 +15,9 @@
   .card-container:hover {
     transform: scale(1.05);
   }
+
+  img {
+    object-fit: cover;
+    /* background-size: cover; */
+  }
   
