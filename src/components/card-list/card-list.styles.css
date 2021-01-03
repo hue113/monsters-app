@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -14,7 +15,8 @@
 
 @media screen and (max-width: 800px) {
   .card-list {
-    grid-template-columns: repeat(2, 1fr)
+    /* grid-template-columns: repeat(2, 1fr) */
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 }
 
